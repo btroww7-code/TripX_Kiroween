@@ -1,0 +1,52 @@
+{
+  "name": "tripx",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:pbt": "vitest --run tests/kiroween-requirements.test.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.0",
+    "@rainbow-me/rainbowkit": "^2.2.9",
+    "@supabase/supabase-js": "^2.38.0",
+    "@tanstack/react-query": "^5.0.0",
+    "framer-motion": "^10.16.0",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.294.0",
+    "mapbox-gl": "^3.0.0",
+    "polyline-encoded": "^0.0.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "sonner": "^2.0.7",
+    "three": "^0.181.2",
+    "viem": "^2.0.0",
+    "wagmi": "^2.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/leaflet": "^1.9.8",
+    "@types/node": "^20.19.25",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/three": "^0.181.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "@vitest/ui": "^4.0.14",
+    "autoprefixer": "^10.4.16",
+    "fast-check": "^4.3.0",
+    "jsdom": "^27.2.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.0",
+    "vite": "^6.4.1",
+    "vitest": "^4.0.14"
+  }
+}
