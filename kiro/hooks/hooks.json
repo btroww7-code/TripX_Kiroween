@@ -1,0 +1,48 @@
+{
+  "hooks": [
+    {
+      "name": "lint-on-save",
+      "description": "Automatically lint and fix TypeScript/TSX files on save",
+      "trigger": "onFileSave",
+      "filePattern": "*.{ts,tsx}",
+      "action": "shell",
+      "command": "npx eslint --fix ${file}",
+      "enabled": true
+    },
+    {
+      "name": "type-check-on-save",
+      "description": "Run TypeScript type checking on save",
+      "trigger": "onFileSave",
+      "filePattern": "*.{ts,tsx}",
+      "action": "shell",
+      "command": "npx tsc --noEmit",
+      "enabled": true
+    },
+    {
+      "name": "test-on-commit",
+      "description": "Run all tests before committing",
+      "trigger": "onCommit",
+      "action": "shell",
+      "command": "npm run test:run",
+      "enabled": true
+    },
+    {
+      "name": "format-on-save",
+      "description": "Format code with Prettier on save",
+      "trigger": "onFileSave",
+      "filePattern": "*.{ts,tsx,js,jsx,json,css,md}",
+      "action": "shell",
+      "command": "npx prettier --write ${file}",
+      "enabled": false
+    },
+    {
+      "name": "halloween-theme-check",
+      "description": "Remind to use Halloween theme colors in halloween components",
+      "trigger": "onFileSave",
+      "filePattern": "components/halloween/*.{ts,tsx}",
+      "action": "message",
+      "message": "Remember to use Halloween theme colors from halloweenTheme.ts and respect prefers-reduced-motion for animations!",
+      "enabled": true
+    }
+  ]
+}
