@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="kiroweenlogo.png" alt="Kiroween 2025" width="400" />
+</div>
+
 # 🎃 TripX
 
 **AI-Powered Spooky Travel Planning with Web3 Gamification**
